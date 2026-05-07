@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-primary: #FFD43B;
+  --color-dark: #0A0A0A;
+  --color-light: #F5F5F4;
+  --color-off-white: #FAF9F6;
+  
+  --breakpoint-xs: 480px;
+}
+
+@layer base {
+  body {
+    @apply bg-dark text-light font-sans antialiased overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tighter text-white uppercase font-black;
+  }
+}
+
+@layer utilities {
+  .border-subtle {
+    @apply border-light/10;
+  }
+  
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+
+  .text-label {
+    @apply text-[10px] uppercase tracking-[0.3em] font-bold;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFD43B;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes slow-zoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
