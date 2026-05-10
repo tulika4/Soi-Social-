@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { User, ShieldCheck, Zap, Waves, ArrowLeft, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
