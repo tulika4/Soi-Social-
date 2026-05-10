@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { Calendar as CalendarIcon, Users, ChevronRight, Check, Loader2 } from "lucide-react";
 import { useState, FormEvent } from "react";
 
