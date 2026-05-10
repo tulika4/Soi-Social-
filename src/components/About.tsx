@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { Coffee, Wifi, Users, MapPin } from "lucide-react";
 
 const features = [
