@@ -1,7 +1,7 @@
 import { ReactNode, useEffect } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { motion, useScroll, useSpring } from "motion/react";
+import { motion, useScroll, useSpring } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
