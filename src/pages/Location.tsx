@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { Train, Navigation, Coffee, ShoppingBag, MapPin } from "lucide-react";
 
 export default function Location() {
