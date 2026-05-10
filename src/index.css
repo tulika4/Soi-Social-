@@ -4,7 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
-/* These variables now work with Tailwind v3 */
 :root {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Outfit", sans-serif;
@@ -22,7 +21,6 @@
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
-
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
     letter-spacing: -0.05em;
@@ -33,16 +31,12 @@
 }
 
 @layer utilities {
-  .border-subtle {
-    border-color: rgba(245, 245, 244, 0.1);
-  }
-  
+  .border-subtle { border-color: rgba(245, 245, 244, 0.1); }
   .glass-card {
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
-
   .text-label {
     font-size: 10px;
     text-transform: uppercase;
@@ -52,28 +46,9 @@
 }
 
 /* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0A0A0A; }
+::-webkit-scrollbar-thumb { background: #333; }
+::-webkit-scrollbar-thumb:hover { background: #FFD43B; }
 
-::-webkit-scrollbar-track {
-  background: #0A0A0A;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #333;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #FFD43B;
-}
-
-/* Smooth Scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-@keyframes slow-zoom {
-  from { transform: scale(1); }
-  to { transform: scale(1.1); }
-}
+html { scroll-behavior: smooth; }
