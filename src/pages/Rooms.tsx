@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import RoomTypes from "../components/RoomTypes";
 
 export default function Rooms() {
