@@ -8,7 +8,7 @@ import Gallery from "./pages/Gallery";
 import LocationPage from "./pages/Location";
 import Contact from "./pages/Contact";
 import Layout from "./components/Layout";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
 function AnimatedRoutes() {
