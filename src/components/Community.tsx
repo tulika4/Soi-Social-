@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Calendar, Music, Map, Sword, Utensils } from "lucide-react";
 
