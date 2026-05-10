@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 const images = [
   "https://images.unsplash.com/photo-1541339907198-e08756ebafe3?q=80&w=800",
