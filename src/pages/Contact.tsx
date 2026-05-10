@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { MessageSquare, Mail, Phone, MapPin, Instagram, Facebook, Twitter } from "lucide-react";
 
 export default function Contact() {
