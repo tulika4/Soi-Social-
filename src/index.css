@@ -1,40 +1,53 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
-@theme {
+/* These variables now work with Tailwind v3 */
+:root {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Outfit", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
-
   --color-primary: #FFD43B;
   --color-dark: #0A0A0A;
   --color-light: #F5F5F4;
-  --color-off-white: #FAF9F6;
-  
-  --breakpoint-xs: 480px;
 }
 
 @layer base {
   body {
-    @apply bg-dark text-light font-sans antialiased overflow-x-hidden;
+    background-color: #0A0A0A;
+    color: #F5F5F4;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display tracking-tighter text-white uppercase font-black;
+    font-family: var(--font-display);
+    letter-spacing: -0.05em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
   }
 }
 
 @layer utilities {
   .border-subtle {
-    @apply border-light/10;
+    border-color: rgba(245, 245, 244, 0.1);
   }
   
   .glass-card {
-    @apply bg-white/5 backdrop-blur-md border border-white/10;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .text-label {
-    @apply text-[10px] uppercase tracking-[0.3em] font-bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-weight: 700;
   }
 }
 
