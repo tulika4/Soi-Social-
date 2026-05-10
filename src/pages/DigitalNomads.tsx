@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import DigitalNomad from "../components/DigitalNomad";
 
 export default function DigitalNomads() {
